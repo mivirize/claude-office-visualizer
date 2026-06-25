@@ -1,0 +1,10 @@
+TASK: Remove commented code from claude-office-visualizer
+
+Recent quality scan identified 6 lines of commented-out code in claude-office-visualizer.
+
+Instructions:
+1. Review the codebase for commented-out code (lines starting with // or /* */)
+2. Remove any commented-out code that is no longer needed
+3. Ensure the code remains functional after removal
+
+Expected outcome: All commented code removed from the codebase.

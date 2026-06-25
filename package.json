@@ -1,13 +1,17 @@
 {
-    "name": "claude-office-visualizer",
-    "version": "1.0.0",
-    "description": "Game-style visualizer for Claude Code AI agent activity",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js",
-        "dev": "node server.js"
-    },
-    "dependencies": {
-        "ws": "^8.16.0"
-    }
+  "name": "claude-office-visualizer",
+  "version": "1.0.0",
+  "description": "Game-style visualizer for Claude Code AI agent activity",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "jest --forceExit"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
 }

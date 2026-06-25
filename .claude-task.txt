@@ -1,0 +1,25 @@
+Task: Refactor app.js to reduce file length under 800 lines
+
+REQUIREMENTS (strict):
+1. Split app.js (1962 lines) into logical modules, each <800 lines
+2. Suggested module structure:
+   - app.js (main, ~500 lines): DOM setup, event listeners, main init
+   - agent-manager.js (~600 lines): createAgent, createDemoAgents, getAgentForSession
+   - renderer.js (~600 lines): drawOffice, drawCharacter, shadeColor, hexToRgb
+   - particle-system.js (~400 lines): spawnParticle, updateParticles
+   - session-tracker.js (~400 lines): mapSessionStatus, getStatusFromTool, buildSessionsSummary
+   - event-handler.js (~500 lines): handleServerEvent, handleUserMessage, processEvent
+   - utils.js (~200 lines): summarizeToolInput, parseLine
+3. Use ES6 modules (import/export)
+4. Update package.json if needed (type: "module" for ESM)
+5. Keep all existing functionality - NO BEHAVIOR CHANGES
+6. Keep existing tests passing
+7. Run npm test to verify nothing broke
+
+CONSTRAINTS:
+- Conventional commits (if you commit)
+- No console.log
+- No new features
+- Max 3 rounds of refactoring
+
+Stop when all files are <800 lines and tests pass.

@@ -1,0 +1,22 @@
+Review this code for an AI company quality gate.
+
+Project: C:\Users\rmiak\Dev\claude-office-visualizer
+Task: Add comprehensive tests for app.js (1967 lines), create README.md with setup/usage instructions, create CLAUDE.md with project context and AI assistant guidance, address console.log statements (4 remaining), clean up commented code (26 lines), and consider splitting app.js into smaller modules (<800 lines).
+
+Check these criteria and return ONLY valid JSON:
+
+1. SECURITY: No hardcoded secrets, input validation present, parameterized queries
+2. QUALITY: Files under 800 lines, functions under 50 lines, no console.log
+3. TESTING: Tests exist and pass (if applicable)
+4. CORRECTNESS: Implementation matches the task description
+5. STYLE: Conventional commits, proper error handling
+
+Return format:
+{"verdict": "APPROVE or REVISE or BLOCK", "findings": [{"category": "SECURITY|QUALITY|TESTING|CORRECTNESS|STYLE", "severity": "BLOCK|WARNING|INFO", "message": "...", "file": "...", "line": 0}], "summary": "One sentence summary"}
+
+BLOCK if: any security issue, no tests for new code, fundamentally wrong approach
+REVISE if: quality warnings, missing edge cases, minor issues
+APPROVE if: all checks pass with at most INFO-level findings
+
+Files modified: app.js, server.js, style.css, package.json (added jest)
+New files: logger.js, session-tracker.js
